@@ -20,6 +20,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = Users.create(name: params[:name])
+    Users.create(name: params[:name])
   end
 end
