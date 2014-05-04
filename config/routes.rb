@@ -31,4 +31,9 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :clock do
+    collection do
+      post :range
+    end
+  end
 end
