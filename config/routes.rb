@@ -36,4 +36,10 @@ Rails.application.routes.draw do
       post :range
     end
   end
+
+  resources :calls do
+    collection do
+      get :complete
+    end
+  end
 end
