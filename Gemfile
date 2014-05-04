@@ -6,6 +6,6 @@ gem 'rails-api'
 
 gem 'mysql2'
 
-group :development do
-  gem 'spring'
-end
+gem 'rspec-rails', :group => [:development, :test]
+
+gem 'spring', :group => [:development]
