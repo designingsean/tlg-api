@@ -42,4 +42,9 @@ Rails.application.routes.draw do
       get :complete
     end
   end
+
+  resources :notes do
+    collection do
+    end
+  end
 end
