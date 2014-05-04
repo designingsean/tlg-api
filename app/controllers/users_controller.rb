@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     render json: @users
   end
 
-  def edit
+  def update
     user = Users.find(params[:id])
     user.toggle(:active)
     user.save
